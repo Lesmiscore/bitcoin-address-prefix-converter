@@ -1,26 +1,7 @@
 import { address } from "bitcoinjs-lib";
 import React from "react";
-import {
-    FormGroup,
-    ControlLabel,
-    FormControl,
-    HelpBlock
-} from "react-bootstrap";
 import Error from "./alert.jsx";
-
-function FieldGroup(opts) {
-    const { id, label, help } = opts;
-    const props = Object.assign({}, opts, {
-        id: void 0, label: void 0, help: void 0
-    });
-    return (
-        <FormGroup controlId={id}>
-            <ControlLabel>{label}</ControlLabel>
-            <FormControl {...props} />
-            {help && <HelpBlock>{help}</HelpBlock>}
-        </FormGroup>
-    );
-}
+import FieldGroup from "./formfield.jsx";
 
 export default class AddressConverterForm extends React.Component {
     constructor() {
