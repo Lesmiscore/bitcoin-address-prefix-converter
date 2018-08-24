@@ -18,16 +18,4 @@ $('script').each(function (i, elem) {
     elem.removeAttr("src");
 });
 
-let css = "";
-$('link[rel=\"stylesheet\"]').each(function (i, elem) {
-    elem = $(this);
-    const src = elem.attr("href");
-    console.log(`Inlining ${src}`);
-    const code = fs.readFileSync(path.join(staticPath, src), 'UTF-8');
-    css += `${code}\n`;
-    elem.remove();
-});
-
-$('head').append(`<style>\n${css}</style>`);
-
 fs.writeFileSync(path.join(staticResult, "index.html"), $.html());
