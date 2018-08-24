@@ -44,7 +44,7 @@ export default class AddressConverterForm extends React.Component {
             const converted = address.toBase58Check(hashPart, this.state.prefix);
             this.setState({ output: converted, errors: "" });
         } catch (errors) {
-            this.setState({ errors });
+            this.setState({ errors: errors + "" });
         }
     }
     render() {
@@ -78,7 +78,7 @@ export default class AddressConverterForm extends React.Component {
                     label="Output"
                     placeholder="Result will be displayed here"
                 />
-                {this.state.errors && <Error message={"" + this.state.errors} />}
+                {this.state.errors && <Error message={this.state.errors} />}
             </form>
         );
     }
