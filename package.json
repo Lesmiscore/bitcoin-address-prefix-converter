@@ -4,7 +4,8 @@
   "description": "Bitcoin-like address prefix converter",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "true",
+    "static": "rm -rf public/ && mkdir public/ && webpack && node ./utils/inliner.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,14 @@
   "homepage": "https://github.com/nao20010128nao/bitcoin-address-prefix-converter#readme",
   "dependencies": {
     "bitcoinjs-lib": "^4.0.1",
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
     "cheerio": "^1.0.0-rc.2",
     "webpack": "^4.17.1",
     "webpack-cli": "^3.1.0"
