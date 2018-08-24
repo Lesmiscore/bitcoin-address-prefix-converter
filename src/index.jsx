@@ -12,14 +12,14 @@ const App = () => {
             <Alert bsStyle="info">
                 <p>
                     Without changing Hash part, this tools changes Prefix part of Bitcoin-like Base58 address.
-            <br /> Bech32(SegWit), CashAddress(BCH), Zcash addresses are not supported.
-            <br /> If it is Base58 address, ScriptSig address is also supported.
-            </p>
+                    <br /> Bech32(SegWit), CashAddress(BCH), Zcash addresses are not supported.
+                    <br /> If it is Base58 address, ScriptSig address is also supported.
+                </p>
                 <p>
                     BitcoinアドレスのようなBase58アドレスの、Hash部分を変更することなく、Prefixパートを変更します。
-            <br /> Bech32(SegWit)、CashAddress(BCH)、Zcashアドレスには対応していませんのであしからず。
-            <br /> Base58であればScriptSigアドレスにも対応しています。
-            </p>
+                    <br /> Bech32(SegWit)、CashAddress(BCH)、Zcashアドレスには対応していませんのであしからず。
+                    <br /> Base58であればScriptSigアドレスにも対応しています。
+                </p>
             </Alert>
             <Alert bsStyle="danger">
                 <p>This tool won't require any private keys. If you prompted to type the key, IT'S SCAM.</p>
