@@ -13,11 +13,13 @@ const App = () => (
                 Without changing Hash part, this tools changes Prefix part of Bitcoin-like Base58 address.
                 <br /> Bech32(SegWit), CashAddress(BCH), Zcash addresses are not supported.
                 <br /> If it is Base58 address, ScriptSig address is also supported.
+                <br /> All operation will be done locally. This program won't send anything.
             </p>
             <p>
                 BitcoinアドレスのようなBase58アドレスの、Hash部分を変更することなく、Prefixパートを変更します。
                 <br /> Bech32(SegWit)、CashAddress(BCH)、Zcashアドレスには対応していませんのであしからず。
                 <br /> Base58であればScriptSigアドレスにも対応しています。
+                <br /> 全ての操作はブラウザ内部で行われます。いかなるデータを送信することはありません。
             </p>
         </Alert>
         <Alert bsStyle="danger">
